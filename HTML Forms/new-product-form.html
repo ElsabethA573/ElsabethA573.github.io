@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="script/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Html Forms</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LizaBerry Market:::SRM System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Products<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Suppliers</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <label class="p-3"> Hello </label>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Signout</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="p-3 card">
+        <div class="card-body">
+            <h3>New Product Form</h3>
+            <form onsubmit="return newProductFields()">
+                <div class="row">
+                    <div class="col-sm">
+
+                        <div class="form-group">
+                            <label for="product-number">Product Number</label>
+                            <input type="text" class="form-control" id="product-number"
+                                name="ProductNumber" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="unit-price">Unit Price</label>
+                            <input type="number" class="form-control" id="unit-price" 
+                                name="unitPrice">
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm">
+
+                        <div class="form-group">
+                            <label for="quntity-in-stock">Quantity in stock</label>
+                            <input type="number" class="form-control" id="quntity-in-stock"
+                                name="quantityInStock" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="supplier">Supplier</label>
+                            <select class="form-control" id="supplier" name="supplier">
+                              <option>supplier 1</option>
+                              <option>supplier 2</option>
+                              <option>supplier 3</option>
+                              <option>supplier 4</option>
+                              <option>supplier 5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date-supplied">Date supplied</label>
+                            <input type="date" class="form-control" id="date-supplied" 
+                                name="dateSupplied">
+                            <small id="emailHelp" class="form-text text-muted">
+                                Enter a valid date
+                            </small>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="float-right">
+                    <a class="p-3" href="index.html">Go Back</a>
+                    <button type="reset" class="btn btn-outline-dark">Reset</button>
+                    <button type="button" class="btn btn-outline-danger" >Cancel</button>
+                        <button type="submit" class="btn btn-outline-primary" >Add Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border: 0; width: 88px; height: 31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+        <a href="https://validator.w3.org/check/referer">
+            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" />
+        </a>
+    </p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
