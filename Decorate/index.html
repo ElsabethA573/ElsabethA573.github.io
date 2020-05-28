@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Text Decorator</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+    <!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <!-- link to your script file here -->
+
+</head>
+
+<body>
+    <div id="container">
+        <h1> Text Decorator</h1>
+
+        <div>
+            <img src="decorated.gif" alt="very decorated!" />
+        </div>
+
+        <!-- Your UI controls go here -->
+
+        <fieldset>
+            <legend>Text </legend>
+            <textarea rows="4" cols="30" name="orginalText" id="orginalText"> some text here </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Decoration </legend>
+            <button id="docBig" name="docBig">Decoration</button> <br>
+            <input type="checkbox" id="bling" name="bling">
+            <label for="bling">Bling </label>
+        </fieldset>
+    </div>
+    <div id="validation">
+        <a href="https://validator.w3.org/check/referer"> <img src="w3c-html.png" alt="html validator" /></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"> <img src="w3c-css.png" alt="CSS validator" /></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
