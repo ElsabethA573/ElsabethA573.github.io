@@ -56,7 +56,7 @@ function summaryReport(){
 
 	}
 	else{
-		document.getElementById("summary").value ="Create employee object(s) first to review the summary report. Thank you! "
+		document.getElementById("summary").value ="Create new account object(s) first to review the summary report. Thank you! "
 		document.getElementById("summary").style.color="red";
 		document.getElementById("summary").style.fontSize="16px";
 		if(timer==null) timer = setInterval(goOff,20000);
